@@ -196,10 +196,7 @@ Function BackgroundColor {
 
 
 Write-Output (Underline "`nChecking the webserver of $Domain on A and AAAA hostnames.")
-
-
 Resolve-DnsName -Type 'A_AAAA' -Name $Domain -ErrorAction Stop | Format-Table
-Write-Output (Underline "`nChecking the webserver's MX records.")
 Resolve-DnsName -Type 'A' -Name $Domain -ErrorAction Ignore | Format-Table
 Resolve-DnsName -Type 'A_AAAA' -Name www.$Domain -ErrorAction Ignore | Format-Table
 Resolve-DnsName -Type 'A' -Name www.$Domain -ErrorAction Ignore | Format-Table 
