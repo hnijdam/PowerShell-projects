@@ -24,4 +24,4 @@ At this time, this script only runs on Microsoft Windows, due to a dependency on
 Install this script by putting it in your local folder i.e C:\Users\[YourName]\.ps > connect the script with your Powershell profile to keep it saved by adding the following command in your profile: Set-Alias lookup "$env:C:\Users\[YourName]\.ps\lookup.ps1"
 Enjoy!!
 .
-#>
+
