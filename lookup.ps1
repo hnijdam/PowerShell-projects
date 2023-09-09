@@ -16,6 +16,9 @@ with this program.  If not, see <https://www.gnu.org/licenses/>.
 Checks a domain for interesting things.
 .DESCRIPTION 
 This script will check a domain's DNS and web site for anything of interest.  This includes security problems, but can also be a good discovery tool.
+.INSTALLATION 
+1. put a similar line in your PS $Profile: Set-Alias lookup "$env:C:\PATH\TO\FILE\lookup.ps1"
+2. And install a powershell module: PS C:\> Install-Module DomainHealthChecker
 .PARAMETER Domain
 The domain to examine.
 .PARAMETER AsPlainText
